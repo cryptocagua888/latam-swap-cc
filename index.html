@@ -9,15 +9,23 @@
 <body>
   <h1>Latam Swap 🌙</h1>
 
-  <!-- 🔐 Botón de administrador, siempre visible -->
   <button id="adminToggleBtn" onclick="toggleAdminPanel()">Panel de Administrador</button>
 
-  <!-- 🔧 Panel administrativo (oculto hasta que se active) -->
   <div class="admin" style="display: none;">
     <h2>Admin Panel</h2>
     <input type="text" id="amount" placeholder="Monto en ETH">
     <button onclick="rechargeContract()">Recargar Contrato</button>
     <button onclick="withdrawFromContract()">Retirar Fondos</button>
+    <button onclick="showContractBalance()">Ver Balance</button>
+  </div>
+
+  <div class="swap-panel">
+    <h2>Panel de Swap</h2>
+    <input type="text" id="fromToken" placeholder="Token origen">
+    <input type="text" id="toToken" placeholder="Token destino">
+    <input type="text" id="amountIn" placeholder="Cantidad a intercambiar">
+    <button onclick="executeSwapFromInputs()">Hacer Swap</button>
+    <button onclick="getRateFromInputs()">Ver Tasa de Cambio</button>
   </div>
 
   <script src="app.js"></script>
