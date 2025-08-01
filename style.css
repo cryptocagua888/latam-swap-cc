@@ -3,7 +3,7 @@ body {
   background: #121212;
   color: #f0f0f0;
   text-align: center;
-  padding: 50px;
+  padding: 40px;
 }
 
 h1 {
@@ -26,10 +26,16 @@ button:hover {
   background: #007acc;
 }
 
-.admin {
-  margin-top: 20px;
+.admin, .swap-panel {
+  margin-top: 30px;
   background: #1e1e1e;
   padding: 20px;
   border-radius: 10px;
   display: inline-block;
 }
+
+input {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border:
